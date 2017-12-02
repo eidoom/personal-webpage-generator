@@ -2,3 +2,8 @@
 	path = static/academicons
 	url = git@github.com:jpswalsh/academicons.git
 	branch = master
+
+[submodule "hugo-strata-theme"]
+    path = themes/hugo-strata-theme
+    url = git@github.com:digitalcraftsman/hugo-strata-theme.git
+    branch = master
