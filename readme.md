@@ -1,0 +1,1 @@
+# Hugo generator for my personal GitHub webpage
