@@ -1,0 +1,113 @@
+baseurl = "//eidoom.github.io/"
+languageCode = "en-us"
+title = "Ryan Moodie"
+theme = "hugo-strata-theme"
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = "UA-66224969-2"
+# Define how many posts should appear on a site
+paginate = 1
+
+[params]
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    name = "Ryan Iain Moodie"
+    description = "Theoretical physicist"
+
+    # Format dates with Go's time formatting
+    date_format = "02-01-2006"
+
+    # Add custom assets with their paths relative to the static folder
+    custom_js   = []
+    custom_css  = ["css/custom.css"]
+    custom_icons = "academicons/css/academicons.css"
+
+    [params.sidebar]
+        # Replace the avatar with a picture of your own under static/images
+        avatar = "my_avatar.jpg"
+        signature = "signature_invert.png"
+        # Use Markdown to format the string. This works nearly all over the theme
+        bio = ""
+        bio_colour="white"
+        # The icons will be shown if you enter your username
+        researchgate= "Ryan_Moodie"
+        arxiv= "moodie_r_1"
+        googlescholar= "R97DSJ8AAAAJ"
+        mendeley= "ryan-moodie"
+        orcid= "0000-0003-3493-1949"
+        twitter = "ryanmoodie"
+        github = "eidoom"
+        gitlab = "eidoom"
+        dribbble = ""
+        facebook = "theryanmoodie"
+        googleplus = "108310237076609271018"
+        flickr = ""
+        linkedin = "ryanmoodie"
+        bitbucket = "ryanmoodie"
+        skype = "r.moodie"
+
+        copyright = [
+            "Design: [Strata](//themes.gohugo.io/strata/)",
+            "Pictures: [Yaz Ashmawi](//www.yazashmawi.com/)"
+        ]
+
+    [params.rss]
+        hide = false
+
+    [params.about]
+        hide  = false
+        title = "Ryan Moodie"
+        content = "Theoretical physicist"
+
+    [params.portfolio]
+        hide = true
+        title = "Recent Work"
+
+        # The images and thumbnails are stored under static/images
+        # Create and change subfolders as you like
+        [[params.portfolio.gallery]]
+            image = "fulls/01.jpg"
+            thumb = "thumbs/01.jpg"
+            title = "Lorem ipsum dolor."
+            description = "Lorem ipsum dolor sit amet."
+
+    [params.recentposts]
+        hide  = true
+        title = "Recent blog posts"
+
+    [params.contact]
+        hide  = false
+        title = "Get in touch"
+        content = ""
+
+        # Since this template is static, the contact form uses www.formspree.io as a
+        # proxy. The form makes a POST request to their servers to send the actual
+        # email. Visitors can send up to a 1000 emails each month for free.
+        #
+        # What you need to do for the setup?
+        #
+        # - set your email address under 'email' below
+        # - upload the generated site to your server
+        # - send a dummy email yourself to confirm your account
+        # - click the confirm link in the email from www.formspree.io
+        # - you're done. Happy mailing!
+        email = "rim31@cam.ac.uk"
+
+        [params.contact.form]
+            # Set custom strings for the form if your native
+            # language isn't English
+            name = "Name"
+            email = "Email"
+            message = "Message"
+            submit = "Send message"
+
+
+# Menu links that appear on the left sidebar
+# [[menu.main]]
+#     name = "Home"
+#     url  = "/"
+#     weight = 0
+
+# [[menu.main]]
+#     name = "Blog"
+#     url  = "post/"
+#     weight = 10
