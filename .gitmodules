@@ -1,4 +1,4 @@
 [submodule "academicons"]
-	path = academicons
+	path = static/academicons
 	url = git@github.com:jpswalsh/academicons.git
 	branch = master
