@@ -7,3 +7,8 @@
     path = themes/hugo-strata-theme
     url = git@github.com:digitalcraftsman/hugo-strata-theme.git
     branch = master
+
+[submodule "public"]
+    path = public
+    url = git@github.com:eidoom/eidoom.github.io.git
+    branch = master
