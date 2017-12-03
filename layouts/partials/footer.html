@@ -16,16 +16,25 @@
         {{ with .Site.Params.sidebar.mendeley }}
         <li><a href="//www.mendeley.com/profiles/{{ . }}" target="_blank" class="ai ai-mendeley ai-2x"><span class="label"></span></a></li>
         {{ end }}
+        {{ with .Site.Params.sidebar.figshare }}
+        <li><a href="//figshare.com/authors/{{ . }}" target="_blank" class="ai ai-figshare ai-2x"><span class="label"></span></a></li>
+        {{ end }}
     </ul>
     <ul class="icons">
+        {{ with .Site.Params.sidebar.academia }}
+        <li><a href="//{{ . }}" target="_blank" class="ai ai-academia ai-2x"><span class="label"></span></a></li>
+        {{ end }}
+        {{ with .Site.Params.sidebar.osf }}
+        <li><a href="//osf.io/{{ . }}" target="_blank" class="ai ai-osf ai-2x"><span class="label"></span></a></li>
+        {{ end }}
+        {{ with .Site.Params.sidebar.impactstory }}
+        <li><a href="//profiles.impactstory.org/u/{{ . }}" target="_blank" class="ai ai-impactstory ai-2x"><span class="label"></span></a></li>
+        {{ end }}
         {{ with .Site.Params.sidebar.googleplus }}
         <li><a href="//plus.google.com/{{ . }}" target="_blank" class="icon fa-google-plus-official fa-lg"><span class="label">Google Plus</span></a></li>
         {{ end }}
         {{ with .Site.Params.sidebar.linkedin }}
         <li><a href="//linkedin.com/in/{{ . }}" target="_blank" class="icon fa-linkedin fa-lg"><span class="label">LinkedIn</span></a></li>
-        {{ end }}
-        {{ with .Site.Params.sidebar.skype }}
-        <li><a href="skype:{{ . }}?add" target="_blank" class="icon fa-skype fa-lg"><span class="label">Skype</span></a></li>
         {{ end }}
         {{ with .Site.Params.sidebar.dribbble }}
         <li><a href="//dribbble.com/{{ . }}" target="_blank" class="icon fa-dribbble fa-lg"><span class="label">Dribbble</span></a></li>
@@ -35,9 +44,6 @@
         {{ end }}
         {{ with .Site.Params.sidebar.twitter }}
         <li><a href="//twitter.com/{{ . }}" target="_blank" class="icon fa-twitter fa-lg"><span class="label">Twitter</span></a></li>
-        {{ end }}
-        {{ with .Site.Params.sidebar.facebook }}
-        <li><a href="//messenger.com/t/{{ . }}" target="_blank" class="icon fa-facebook fa-lg"><span class="label">Facebook</span></a></li>
         {{ end }}
     </ul>
     <ul class="icons">
@@ -49,6 +55,12 @@
         {{ end }}
         {{ with .Site.Params.sidebar.bitbucket }}
         <li><a href="//bitbucket.com/{{ . }}" target="_blank" class="icon fa-bitbucket fa-lg"><span class="label">BitBucket</span></a></li>
+        {{ end }}
+        {{ with .Site.Params.sidebar.facebook }}
+        <li><a href="//messenger.com/t/{{ . }}" target="_blank" class="icon fa-facebook fa-lg"><span class="label">Facebook</span></a></li>
+        {{ end }}
+        {{ with .Site.Params.sidebar.skype }}
+        <li><a href="skype:{{ . }}?add" target="_blank" class="icon fa-skype fa-lg"><span class="label">Skype</span></a></li>
         {{ end }}
         {{ with .Site.Params.contact.email }}
         <li><a href="mailto:{{ . }}" class="icon fa-envelope fa-lg"><span class="label">Email</span></a></li>
