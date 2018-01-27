@@ -60,19 +60,19 @@ paginate = 1
     [params.about]
         hide  = false
         title = "Ryan Moodie"
-        content = "Theoretical physicist"
+        content = "Theoretical physicist\n\nI'm applying for PhDs just now. Have a look at my [CV](documents/cv.pdf) or [statement of purpose](documents/statement.pdf) if you like."
 
     [params.portfolio]
         hide = true
-        title = "Recent Work"
+        title = "Stuff"
 
         # The images and thumbnails are stored under static/images
         # Create and change subfolders as you like
         [[params.portfolio.gallery]]
-            image = "fulls/01.jpg"
-            thumb = "thumbs/01.jpg"
-            title = "Lorem ipsum dolor."
-            description = "Lorem ipsum dolor sit amet."
+            image = ""
+            thumb = ""
+            title = ""
+            description = ""
 
     [params.recentposts]
         hide  = true
