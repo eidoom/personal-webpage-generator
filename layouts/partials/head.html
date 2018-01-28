@@ -8,6 +8,8 @@
 <html>
 	<head>
 		<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+		{{ "<!-- Favicon -->" | safeHTML }}
+		<link rel="shortcut icon" href="{{ .Site.BaseURL }}/{{ .Site.Params.favicon}}">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}

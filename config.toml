@@ -13,6 +13,9 @@ paginate = 1
     name = "Ryan Iain Moodie"
     description = "Theoretical physicist"
 
+    # path relative to static folder 
+    favicon = "favicon.ico"
+
     # Format dates with Go's time formatting
     date_format = "02-01-2006"
 
