@@ -45,6 +45,9 @@
         {{ with .Site.Params.sidebar.twitter }}
         <li><a href="//twitter.com/{{ . }}" target="_blank" class="icon fa-twitter fa-lg"><span class="label">Twitter</span></a></li>
         {{ end }}
+        {{ with .Site.Params.sidebar.facebook }}
+        <li><a href="//messenger.com/t/{{ . }}" target="_blank" class="icon fa-facebook fa-lg"><span class="label">Facebook</span></a></li>
+        {{ end }}        
     </ul>
     <ul class="icons">
         {{ with .Site.Params.sidebar.github }}
@@ -55,9 +58,6 @@
         {{ end }}
         {{ with .Site.Params.sidebar.bitbucket }}
         <li><a href="//bitbucket.com/{{ . }}" target="_blank" class="icon fa-bitbucket fa-lg"><span class="label">BitBucket</span></a></li>
-        {{ end }}
-        {{ with .Site.Params.sidebar.facebook }}
-        <li><a href="//messenger.com/t/{{ . }}" target="_blank" class="icon fa-facebook fa-lg"><span class="label">Facebook</span></a></li>
         {{ end }}
         {{ with .Site.Params.sidebar.skype }}
         <li><a href="skype:{{ . }}?add" target="_blank" class="icon fa-skype fa-lg"><span class="label">Skype</span></a></li>
