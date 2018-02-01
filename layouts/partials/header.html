@@ -1,6 +1,8 @@
 {{ "<!-- Header -->" | safeHTML }}
 <header id="header">
-	<a href="{{ .Site.BaseURL }}" class="image avatar"><img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" alt="Me" /></a>
+	<a href="{{ .Site.BaseURL }}" class="image avatar"><img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" alt="Me"></a>
+	<br>    
+    <img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.signature }}" alt="Ryan Moodie" style="width:192px;background-color:transparent;"></a>
 	
 	{{ with .Site.Params.sidebar.bio }}
 		<h1><font color={{ .Site.Params.sidebar.bio_colour }}>{{ . | markdownify }}</font></h1>

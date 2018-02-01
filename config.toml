@@ -27,10 +27,11 @@ paginate = 1
     [params.sidebar]
         # Replace the avatar with a picture of your own under static/images
         avatar = "my_avatar.jpg"
-        signature = "signature_invert.png"
+        signature = "signature.png"
         # Use Markdown to format the string. This works nearly all over the theme
         bio = ""
         bio_colour="white"
+
         # The icons will be shown if you enter your username
         researchgate= "Ryan_Moodie"
         arxiv= "moodie_r_1"
@@ -67,7 +68,7 @@ paginate = 1
 
     [params.portfolio]
         hide = true
-        title = "Stuff"
+        title = ""
 
         # The images and thumbnails are stored under static/images
         # Create and change subfolders as you like
