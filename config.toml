@@ -27,7 +27,7 @@ paginate = 1
     [params.sidebar]
         # Replace the avatar with a picture of your own under static/images
         avatar = "my_avatar.jpg"
-        signature = "signature.png"
+        signature = "signature_invert.png"
         # Use Markdown to format the string. This works nearly all over the theme
         bio = ""
         bio_colour="white"
@@ -38,8 +38,8 @@ paginate = 1
         googlescholar= "R97DSJ8AAAAJ"
         mendeley= "ryan-moodie"
         orcid= "0000-0003-3493-1949"
-        # academia= "cambridge.academia.edu/RyanMoodie"
-        # figshare= "Ryan_Moodie/4638676"
+        academia= "cambridge.academia.edu/RyanMoodie"
+        figshare= "Ryan_Moodie/4638676"
         impactstory= "0000-0003-3493-1949"
         osf = "34xm2"
         twitter = "ryanmoodie"
@@ -64,7 +64,7 @@ paginate = 1
     [params.about]
         hide  = false
         title = "Ryan Moodie"
-        content = "Theoretical physicist\n\nI'm applying for PhDs just now. Have a look at my [CV](documents/cv.pdf) or [statement of purpose](documents/statement.pdf) if you like."
+        content = "Theoretical physicist"
 
     [params.portfolio]
         hide = true
@@ -79,13 +79,13 @@ paginate = 1
             description = ""
 
     [params.recentposts]
-        hide  = true
+        hide  = false
         title = "Recent blog posts"
 
     [params.contact]
         hide  = false
         title = "Get in touch"
-        content = ""
+        # content = ""
 
         # Since this template is static, the contact form uses www.formspree.io as a
         # proxy. The form makes a POST request to their servers to send the actual
@@ -109,7 +109,7 @@ paginate = 1
             submit = "Send message"
 
 
-# Menu links that appear on the left sidebar
+#Menu links that appear on the left sidebar
 # [[menu.main]]
 #     name = "Home"
 #     url  = "/"
