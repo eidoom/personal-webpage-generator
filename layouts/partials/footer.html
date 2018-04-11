@@ -4,29 +4,29 @@
         <img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.signature }}" alt="Ryan Moodie">
     </a>
     <ul class="icons">
-        {{ with .Site.Params.sidebar.arxiv }}
-        <li><a href="//arxiv.org/a/{{ . }}.html" target="_blank" class="ai ai-arxiv ai-2x"><span class="label"></span></a></li>
+        {{ with .Site.Params.sidebar.orcid }}
+            <li><a href="//orcid.org/{{ . }}" target="_blank" class="ai ai-orcid ai-2x"><span class="label">ORCID</span></a></li>
         {{ end }}
-        {{ with .Site.Params.sidebar.googlescholar }}
-        <li><a href="//scholar.google.co.uk/citations?user={{ . }}" target="_blank" class="ai ai-google-scholar ai-2x"><span class="label"></span></a></li>
+        {{ with .Site.Params.sidebar.arxiv }}
+            <li><a href="//arxiv.org/a/{{ . }}.html" target="_blank" class="ai ai-arxiv ai-2x"><span class="label">arXiv</span></a></li>
         {{ end }}
         {{ with .Site.Params.sidebar.github }}
-        <li><a href="//github.com/{{ . }}" target="_blank" class="icon fa-github fa-lg"><span class="label">GitHub</span></a></li>
+            <li><a href="//github.com/{{ . }}" target="_blank" class="icon fa-github fa-lg"><span class="label">GitHub</span></a></li>
         {{ end }}
         {{ with .Site.Params.sidebar.gitlab }}
-        <li><a href="//gitlab.com/{{ . }}" target="_blank" class="icon fa-gitlab fa-lg"><span class="label">GitLab</span></a></li>
+            <li><a href="//gitlab.com/{{ . }}" target="_blank" class="icon fa-gitlab fa-lg"><span class="label">GitLab</span></a></li>
         {{ end }}
         {{ with .Site.Params.sidebar.bitbucket }}
-        <li><a href="//bitbucket.com/{{ . }}" target="_blank" class="icon fa-bitbucket fa-lg"><span class="label">BitBucket</span></a></li>
+            <li><a href="//bitbucket.com/{{ . }}" target="_blank" class="icon fa-bitbucket fa-lg"><span class="label">BitBucket</span></a></li>
         {{ end }}
         {{ with .Site.Params.sidebar.linkedin }}
-        <li><a href="//linkedin.com/in/{{ . }}" target="_blank" class="icon fa-linkedin fa-lg"><span class="label">LinkedIn</span></a></li>
+            <li><a href="//linkedin.com/in/{{ . }}" target="_blank" class="icon fa-linkedin fa-lg"><span class="label">LinkedIn</span></a></li>
         {{ end }}
         {{ with .Site.Params.sidebar.skype }}
-        <li><a href="skype:{{ . }}?add" target="_blank" class="icon fa-skype fa-lg"><span class="label">Skype</span></a></li>
+            <li><a href="skype:{{ . }}?add" target="_blank" class="icon fa-skype fa-lg"><span class="label">Skype</span></a></li>
         {{ end }}
         {{ with .Site.Params.contact.email }}
-        <li><a href="mailto:{{ . }}" class="icon fa-envelope fa-lg"><span class="label">Email</span></a></li>
+            <li><a href="mailto:{{ . }}" class="icon fa-envelope fa-lg"><span class="label">Email</span></a></li>
         {{ end }}
     </ul>
     <ul class="copyright">

@@ -19,6 +19,9 @@ paginate = 1
     # Format dates with Go's time formatting
     date_format = "02-01-2006"
 
+    # Add read time estimates in the format "X min read"
+    show_read_time = true
+
     # Add custom assets with their paths relative to the static folder
     custom_js   = []
     custom_css  = ["css/custom.css"]
@@ -52,6 +55,9 @@ paginate = 1
         linkedin = "ryanmoodie"
         bitbucket = "ryanmoodie"
         skype = "r.moodie"
+        wikipedia = "theeidoom"
+        stackexchange = "6514595/eidoom"
+        quora = "Ryan-Moodie-1"
 
         copyright = [
             "Design: [Strata](//themes.gohugo.io/strata/)",
@@ -110,6 +116,7 @@ paginate = 1
 
 
 #Menu links that appear on the left sidebar
+
 # [[menu.main]]
 #     name = "Home"
 #     url  = "/"

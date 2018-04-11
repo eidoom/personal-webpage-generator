@@ -3,7 +3,7 @@ banner = ""
 categories = ["physics"]
 date = "2017-12-04"
 menu = ""
-tags = []
+tags = ["physics"]
 title = "PhD applications"
 +++
 

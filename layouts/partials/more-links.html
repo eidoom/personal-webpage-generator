@@ -1,53 +1,60 @@
 <section>
 <h2>More links</h2>
 <br>
-<div align="center">
+<div>
 <ul class="icons">
-    {{ with .Site.Params.sidebar.researchgate }}
-    <li><a href="//www.researchgate.net/profile/{{ . }}" target="_blank" class="ai ai-researchgate ai-2x"><span class="label"></span></a></li>
+    {{ with .Site.Params.sidebar.googlescholar }}
+        <li><a href="//scholar.google.co.uk/citations?user={{ . }}" target="_blank" class="ai ai-google-scholar ai-2x"><span class="label">Google Scholar</span></a></li>
     {{ end }}
-    {{ with .Site.Params.sidebar.orcid }}
-    <li><a href="//orcid.org/{{ . }}" target="_blank" class="ai ai-orcid ai-2x"><span class="label"></span></a></li>
+    {{ with .Site.Params.sidebar.researchgate }}
+        <li><a href="//www.researchgate.net/profile/{{ . }}" target="_blank" class="ai ai-researchgate ai-2x"><span class="label">ResearchGate</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.mendeley }}
-    <li><a href="//www.mendeley.com/profiles/{{ . }}" target="_blank" class="ai ai-mendeley ai-2x"><span class="label"></span></a></li>
+        <li><a href="//www.mendeley.com/profiles/{{ . }}" target="_blank" class="ai ai-mendeley ai-2x"><span class="label">Mendeley</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.figshare }}
-    <li><a href="//figshare.com/authors/{{ . }}" target="_blank" class="ai ai-figshare ai-2x"><span class="label"></span></a></li>
+        <li><a href="//figshare.com/authors/{{ . }}" target="_blank" class="ai ai-figshare ai-2x"><span class="label">Figshare</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.academia }}
-    <li><a href="//{{ . }}" target="_blank" class="ai ai-academia ai-2x"><span class="label"></span></a></li>
+        <li><a href="//{{ . }}" target="_blank" class="ai ai-academia ai-2x"><span class="label">Academia</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.osf }}
-    <li><a href="//osf.io/{{ . }}" target="_blank" class="ai ai-osf ai-2x"><span class="label"></span></a></li>
+        <li><a href="//osf.io/{{ . }}" target="_blank" class="ai ai-osf ai-2x"><span class="label">OSF</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.impactstory }}
-    <li><a href="//profiles.impactstory.org/u/{{ . }}" target="_blank" class="ai ai-impactstory ai-2x"><span class="label"></span></a></li>
+        <li><a href="//profiles.impactstory.org/u/{{ . }}" target="_blank" class="ai ai-impactstory ai-2x"><span class="label">ImpactStory</span></a></li>
+    {{ end }}
+    {{ with .Site.Params.sidebar.wikipedia }}
+        <li><a href="//en.wikipedia.org/wiki/User:{{ . }}" target="_blank" class="icon fa-wikipedia-w fa-lg"><span class="label">Wikipedia</span></a></li>
+    {{ end }}
+    {{ with .Site.Params.sidebar.stackexchange }}
+        <li><a href="//stackexchange.com/users/{{ . }}" target="_blank" class="icon fa-stack-exchange fa-lg"><span class="label">Stack Exchange</span></a></li>
+    {{ end }}
+    {{ with .Site.Params.sidebar.quora }}
+        <li><a href="//www.quora.com/profile/{{ . }}" target="_blank" class="icon fa-quora fa-lg"><span class="label">Quora</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.googleplus }}
-    <li><a href="//plus.google.com/{{ . }}" target="_blank" class="icon fa-google-plus-official fa-lg"><span class="label">Google Plus</span></a></li>
-    {{ end }}
-    {{ with .Site.Params.sidebar.linkedin }}
-    <li><a href="//linkedin.com/in/{{ . }}" target="_blank" class="icon fa-linkedin fa-lg"><span class="label">LinkedIn</span></a></li>
+        <li><a href="//plus.google.com/{{ . }}" target="_blank" class="icon fa-google-plus fa-lg"><span class="label">Google Plus</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.dribbble }}
-    <li><a href="//dribbble.com/{{ . }}" target="_blank" class="icon fa-dribbble fa-lg"><span class="label">Dribbble</span></a></li>
+        <li><a href="//dribbble.com/{{ . }}" target="_blank" class="icon fa-dribbble fa-lg"><span class="label">Dribbble</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.flickr }}
-    <li><a href="//flickr.com/photos/{{ . }}" target="_blank" class="icon fa-flickr fa-lg"><span class="label">Flickr</span></a></li>
+        <li><a href="//flickr.com/photos/{{ . }}" target="_blank" class="icon fa-flickr fa-lg"><span class="label">Flickr</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.twitter }}
-    <li><a href="//twitter.com/{{ . }}" target="_blank" class="icon fa-twitter fa-lg"><span class="label">Twitter</span></a></li>
+        <li><a href="//twitter.com/{{ . }}" target="_blank" class="icon fa-twitter fa-lg"><span class="label">Twitter</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.facebook }}
-    <li><a href="//messenger.com/t/{{ . }}" target="_blank" class="icon fa-facebook fa-lg"><span class="label">Facebook</span></a></li>
+        <li><a href="//messenger.com/t/{{ . }}" target="_blank" class="icon fa-facebook fa-lg"><span class="label">Facebook</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.skype }}
-    <li><a href="skype:{{ . }}?add" target="_blank" class="icon fa-skype fa-lg"><span class="label">Skype</span></a></li>
+        <li><a href="skype:{{ . }}?add" target="_blank" class="icon fa-skype fa-lg"><span class="label">Skype</span></a></li>
     {{ end }}
     {{ if not .Site.Params.rss.hide }}
-    <li><a href="{{ if $.RSSLink }}{{ $.RSSLink }}{{ else }}{{ $.Site.RSSLink }}{{ end }}" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
+        <li><a href="{{ if $.RSSLink }}{{ $.RSSLink }}{{ else }}{{ $.Site.RSSLink }}{{ end }}" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
     {{ end }}
 </ul>
+<a href="//projecteuler.net/archives" class="icon"><img src="//projecteuler.net/profile/eidoom.png"></a>
 </div>
 </section>
