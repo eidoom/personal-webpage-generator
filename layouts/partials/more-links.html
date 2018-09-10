@@ -3,11 +3,17 @@
 <br>
 <div>
 <ul class="icons">
+    {{ with .Site.Params.sidebar.skype }}
+        <li><a href="skype:{{ . }}?add" target="_blank" class="icon fa-skype fa-lg"><span class="label">Skype</span></a></li>
+    {{ end }}
     {{ with .Site.Params.sidebar.googlescholar }}
         <li><a href="//scholar.google.co.uk/citations?user={{ . }}" target="_blank" class="ai ai-google-scholar ai-2x"><span class="label">Google Scholar</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.researchgate }}
         <li><a href="//www.researchgate.net/profile/{{ . }}" target="_blank" class="ai ai-researchgate ai-2x"><span class="label">ResearchGate</span></a></li>
+    {{ end }}
+    {{ with .Site.Params.sidebar.linkedin }}
+        <li><a href="//linkedin.com/in/{{ . }}" target="_blank" class="icon fa-linkedin fa-lg"><span class="label">LinkedIn</span></a></li>
     {{ end }}
     {{ with .Site.Params.sidebar.mendeley }}
         <li><a href="//www.mendeley.com/profiles/{{ . }}" target="_blank" class="ai ai-mendeley ai-2x"><span class="label">Mendeley</span></a></li>
@@ -48,16 +54,27 @@
     {{ with .Site.Params.sidebar.facebook }}
         <li><a href="//messenger.com/t/{{ . }}" target="_blank" class="icon fa-facebook fa-lg"><span class="label">Facebook</span></a></li>
     {{ end }}
-    {{ with .Site.Params.sidebar.skype }}
-        <li><a href="skype:{{ . }}?add" target="_blank" class="icon fa-skype fa-lg"><span class="label">Skype</span></a></li>
-    {{ end }}
     {{ if not .Site.Params.rss.hide }}
         <li><a href="{{ if $.RSSLink }}{{ $.RSSLink }}{{ else }}{{ $.Site.RSSLink }}{{ end }}" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
     {{ end }}
 </ul>
 <ul class="more-icons">
-<li><a href="//projecteuler.net/archives" class="icon"><img src="//projecteuler.net/profile/eidoom.png"></a></li>
-<li><a href="//www.physicsforums.com/members/ryan-moodie.645989" class="icon"><img src="{{ .Site.BaseURL }}physics_forums_logo.png"></li>
+    {{ with .Site.Params.sidebar.projecteuler }}
+        <li>
+            <a href="//projecteuler.net/archives" class="icon">
+                <img src="//projecteuler.net/profile/{{ . }}.png">
+                <span class="label">Project Euler</span>
+            </a>
+        </li>
+    {{ end }}
+    {{ with .Site.Params.sidebar.physicsforums }}
+        <li>
+            <a href="//www.physicsforums.com/members/{{ . }}" class="icon">
+                <img src="{{ .Site.BaseURL }}physics_forums_logo.png">
+                <span class="label">Physics Forums</span>
+            </a>
+        </li>
+    {{ end }}
 </ul>
 </div>
 </section>
