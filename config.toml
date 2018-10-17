@@ -38,7 +38,6 @@ paginate = 1
         # The icons will be shown if you enter your username
         researchgate= "Ryan_Moodie"
         arxiv= "moodie_r_1"
-        #inspire = "r.moodie"
         googlescholar= "R97DSJ8AAAAJ"
         #mendeley= "ryan-moodie"
         orcid= "0000-0003-3493-1949"
@@ -61,6 +60,9 @@ paginate = 1
         #quora = "Ryan-Moodie-1"
         projecteuler = "eidoom"
         #physicsforums = "ryan-moodie.645989"
+        inspire = "r.moodie"
+        durhamphysics = "rrhf66"
+        durhamippp = "rmoodie"
 
         copyright = [
             "Design: [Strata](//themes.gohugo.io/strata/)",
