@@ -1,7 +1,7 @@
 [submodule "academicons"]
-	path = static/academicons
-	url = git@github.com:jpswalsh/academicons.git
-	branch = master
+    path = static/academicons
+    url = git@github.com:jpswalsh/academicons.git
+    branch = master
 
 [submodule "hugo-strata-theme"]
     path = themes/hugo-strata-theme
