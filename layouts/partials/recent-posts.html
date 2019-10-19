@@ -1,16 +1,25 @@
 <section>
-    {{ with .Site.Params.recentposts.title }}
-        <h2>{{ . }}</h2>
-    {{ end }}
+	{{ with .Site.Params.recentposts.title }}
+	<h2>{{ . }}</h2>
+	{{ end }}
 
 	<div class="row">
-        <br>
-        <p>
-        <ol class="recent-posts">
-        {{ range first 5 (where .Paginator.Pages "Section" "post") }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-        </ol>
-        </p>
+		<br>
+		<p>
+		<ol class="recent-posts">
+			{{ range first 5 (where .Paginator.Pages "Section" "post") }}
+			<li>
+				<a href="{{ .Permalink }}">{{ .Title }}</a>
+			</li>
+			{{ end }}
+		</ol>
+		</p>
 	</div>
+	<ul class="actions">
+		<li>
+			<a href="{{ .Site.BaseURL }}post" class=icon>
+				<input type="button" value="See more"/>
+			</a>
+		</li>
+	</ul>
 </section>
