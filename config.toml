@@ -1,11 +1,11 @@
 baseurl = "//eidoom.github.io/"
-languageCode = "en-us"
+languageCode = "en-gb"
 title = "Ryan Moodie"
 theme = "hugo-strata-theme"
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = "UA-66224969-2"
 # Define how many posts should appear on a site
-paginate = 1
+paginate = 5
 
 [params]
     # To provide some metadata for search engines feel free to add a few

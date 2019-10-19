@@ -55,7 +55,7 @@
         <li><a href="//messenger.com/t/{{ . }}" target="_blank" class="icon fa-facebook fa-lg"><span class="label">Facebook</span></a></li>
     {{ end }}
     {{ if not .Site.Params.rss.hide }}
-        <li><a href="{{ if $.RSSLink }}{{ $.RSSLink }}{{ else }}{{ $.Site.RSSLink }}{{ end }}" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
+    <li><a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
     {{ end }}
 </ul>
 <ul class="more-icons">
