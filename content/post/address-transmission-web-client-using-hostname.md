@@ -1,5 +1,5 @@
 +++
-title = "Address Transmission web client using hostname"
+title = "Addressing the Transmission web client by hostname"
 date = "2019-11-03T09:41:46Z"
 tags = ["linux","bittorrent","server"]
 categories = ["computing"]
