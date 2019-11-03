@@ -1,7 +1,7 @@
 +++
 title = "Bonding ethernet interfaces on Debian Buster"
 date = "2019-11-02T16:36:51Z"
-tags = ["network", "linux", "server"]
+tags = ["network", "linux", "server", "systemd", "debian"]
 categories = ["computing"]
 +++
 
