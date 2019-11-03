@@ -3,7 +3,7 @@ banner = ""
 categories = ["physics"]
 date = "2019-05-17"
 menu = ""
-tags = ["physics"]
+tags = ["phd"]
 title = "PhD first year report"
 draft = false
 +++
