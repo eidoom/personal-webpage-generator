@@ -7,7 +7,7 @@ categories = ["computing"]
 
 I set up my linux server to use its two ethernet interfaces in [parallel](https://en.wikipedia.org/wiki/Link_aggregation#Link_Aggregation_Control_Protocol). 
 My primary [reference was from the Debian wiki](https://wiki.debian.org/Bonding#Using_systemd-networkd).
-My server is running Debian Buster.
+My server runs Debian Buster.
 
 #### Migrating to systemd-networkd
 
