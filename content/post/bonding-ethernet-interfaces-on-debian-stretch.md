@@ -1,11 +1,13 @@
 +++
-title = "Bonding ethernet interfaces on Debian Buster"
+title = "Bonding ethernet interfaces with systemd-networkd"
 date = "2019-11-02T16:36:51Z"
 tags = ["network", "linux", "server", "systemd", "debian"]
 categories = ["computing"]
 +++
 
-I set up my linux server to use its two ethernet interfaces in [parallel](https://en.wikipedia.org/wiki/Link_aggregation#Link_Aggregation_Control_Protocol). My primary [reference was from the Debian wiki](https://wiki.debian.org/Bonding#Using_systemd-networkd).
+I set up my linux server to use its two ethernet interfaces in [parallel](https://en.wikipedia.org/wiki/Link_aggregation#Link_Aggregation_Control_Protocol). 
+My primary [reference was from the Debian wiki](https://wiki.debian.org/Bonding#Using_systemd-networkd).
+My server is running Debian Buster.
 
 #### Migrating to systemd-networkd
 
