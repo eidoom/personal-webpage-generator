@@ -82,7 +82,7 @@ The machines are connected by a gigabit ethernet connection.
 First, measure the speed of copying a file from the client to the server
 
 ```
-time dd if=/dev/zero of=testfile bs=16k count=128k
+time dd if=/dev/zero of=~/mnt/testfile bs=16k count=128k
 ```
 ```
 131072+0 records in
@@ -101,7 +101,7 @@ dd if=/dev/zero of=testfile bs=16k count=128k  0.12s user 1.33s system 4% cpu 31
 Then measure the speed of copying a file from the server to the client
 
 ```
-time dd if=testfile of=/dev/null bs=16k
+time dd if=~/mnt/testfile of=/dev/null bs=16k
 ```
 ```
 73020+0 records in
