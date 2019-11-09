@@ -1,7 +1,7 @@
 +++
 title = "Nerdifying music library management with beets"
 date = "2019-11-03T13:50:54Z"
-tags = ["linux","server","media"]
+tags = ["linux","server","media","installation"]
 categories = ["computing"]
 +++
 

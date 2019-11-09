@@ -1,15 +1,19 @@
 +++
 title = "Home network ad-blocking with Pi-hole"
 date = "2019-11-03T12:41:53Z"
-tags = ["network","linux","server"]
+tags = ["network","linux","server","installation"]
 categories = ["computing"]
 +++
+
+## Pi-hole
 
 [Pi-hole](https://pi-hole.net/) is an awesome piece of software which blocks ads across a network at the name resolution level. 
 Check out the source [here](https://github.com/pi-hole/pi-hole).
 I set it up on my home linux server.
 
-I hoped into my git repos folder and cloned the Pi-hole repo
+## Installation
+
+I hopped into my git repos folder and cloned the Pi-hole repo
 
 ```
 cd ~/git
