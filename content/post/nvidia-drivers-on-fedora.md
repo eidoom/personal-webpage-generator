@@ -3,6 +3,7 @@ title = "Installing Nvidia drivers on Fedora"
 date = "2019-11-09T14:12:40Z"
 tags = ["linux","desktop","installation","drivers"]
 categories = ["computing"]
+description = "How to get the proprietary drivers working"
 +++
 
 ## The market

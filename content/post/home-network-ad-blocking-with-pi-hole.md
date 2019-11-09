@@ -3,6 +3,7 @@ title = "Home network ad-blocking with Pi-hole"
 date = "2019-11-03T12:41:53Z"
 tags = ["network","linux","server","installation"]
 categories = ["computing"]
+description = "A caching DNS server for the home with ad-blocking --- and not just for Raspberry Pis"
 +++
 
 ## Pi-hole

@@ -3,6 +3,7 @@ title = "Nerdifying music library management with beets"
 date = "2019-11-03T13:50:54Z"
 tags = ["linux","server","media","installation"]
 categories = ["computing"]
+description = "My favourite music library management software"
 +++
 
 [beets](http://beets.io/) is the endgame music library management system for me. 

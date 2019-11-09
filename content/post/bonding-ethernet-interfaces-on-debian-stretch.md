@@ -3,13 +3,16 @@ title = "Bonding ethernet interfaces with systemd-networkd"
 date = "2019-11-02T16:36:51Z"
 tags = ["network", "linux", "server", "systemd", "debian"]
 categories = ["computing"]
+description = "Link aggregation on a home server for increased throughput"
 +++
+
+## Introduction
 
 I set up my linux server to use its two ethernet interfaces in [parallel](https://en.wikipedia.org/wiki/Link_aggregation#Link_Aggregation_Control_Protocol). 
 My primary [reference was from the Debian wiki](https://wiki.debian.org/Bonding#Using_systemd-networkd).
 My server runs Debian Buster.
 
-#### Migrating to systemd-networkd
+## Migrating to systemd-networkd
 
 I used [systemd-networkd](https://wiki.archlinux.org/index.php/Systemd-networkd) to configure the bond interface. 
 My system already uses [systemd](https://wiki.archlinux.org/index.php/Systemd), so I just had to enable systemd-networkd.
@@ -36,7 +39,7 @@ sudo apt remove wpasupplicant
 sudo systemctl disable dhcpcd
 ```
 
-#### Configure bond device
+## Configure bond device
 
 The configuration files for systemd-networkd use [this syntax](https://wiki.archlinux.org/index.php/Systemd-networkd#Configuration_files).
 First, I set up the new bond interface.
@@ -54,7 +57,11 @@ Kind=bond
 Mode=802.3ad
 ```
 
-#### Add interfaces to bond
+I chose the `802.3ad` mode to double the throughput of my server's network interface.
+Note that this increase in bandwidth does not apply to a single connection: each connection still uses a single ethernet interface.
+However, multiple connections are balanced over the two physical interfaces.
+
+## Add interfaces to bond
 
 Then I slaved the ethernet interfaces to the bond.
 
@@ -70,7 +77,7 @@ Name=enp*
 Bond=bond1
 ```
 
-#### Assign IP to bond
+## Assign IP to bond
 
 Finally, I assigned a static IP address to the bond interface.
 
@@ -89,7 +96,7 @@ Gateway=192.168.1.1
 DNS=192.168.1.1
 ```
 
-#### Apply and check
+## Apply and check
 
 I applied the new configuration with a reboot
 

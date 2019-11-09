@@ -1,0 +1,19 @@
+<div>
+	<div>
+		<h1>
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		</h1>
+
+		{{ partial "post-meta" . }}
+	</div>
+	<div>
+		<p>
+		{{ if isset .Params "description" }}
+			{{ .Description | markdownify }}
+		{{ else }}
+			{{ .Summary }}
+		{{ end }}
+		</p>
+	</div>
+	<hr>
+</div>
