@@ -20,7 +20,7 @@
    {{ $tagsLen := len .Params.tags }}
    {{ if gt $tagsLen 0 }}
        &nbsp;&nbsp;<i class="fa fa-tags"></i>&nbsp;&nbsp;
-       {{ range $k, $v := .Params.tags }}
+       {{ range $k, $v := sort .Params.tags }}
        <a class="article-category-link" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>
        {{ if lt $k (sub $tagsLen 1) }}&middot;{{ end }}
        {{ end }}
