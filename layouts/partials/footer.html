@@ -4,13 +4,6 @@
         <img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.signature }}" alt="Ryan Moodie">
     </a>
     <ul class="icons">
-        {{ with .Site.Params.sidebar.orcid }}
-            <li>
-                <a href="//orcid.org/{{ . }}" target="_blank" class="ai ai-orcid ai-2x">
-                    <span class="label">ORCID</span>
-                </a>
-            </li>
-        {{ end }}
         {{ with .Site.Params.sidebar.arxiv }}
             <li>
                 <a href="//arxiv.org/a/{{ . }}.html" target="_blank" class="ai ai-arxiv ai-2x">
@@ -36,13 +29,6 @@
             <li>
                 <a href="//bitbucket.com/{{ . }}" target="_blank" class="icon fa-bitbucket fa-lg">
                     <span class="label">BitBucket</span>
-                </a>
-            </li>
-        {{ end }}
-        {{ with .Site.Params.contact.email }}
-            <li>
-                <a href="mailto:{{ . }}" class="icon fa-envelope fa-lg">
-                    <span class="label">Email</span>
                 </a>
             </li>
         {{ end }}
