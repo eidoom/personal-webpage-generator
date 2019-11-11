@@ -33,7 +33,7 @@ sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.re
 and install the drivers with
 
 ```shell
-sudo dnf install --repo fedora-nvidia nvidia-driver akmod-nvidia nvidia-driver-libs.i686 nvidia-settings
+sudo dnf install --repo fedora-nvidia nvidia-driver dkms-nvidia nvidia-driver-libs.i686 nvidia-settings
 ```
 
 Disable Nouveau by appending `rd.driver.blacklist=nouveau` to `GRUB_CMDLINE_LINUX` in `/etc/sysconfig/grub`.
