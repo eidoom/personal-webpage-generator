@@ -65,8 +65,8 @@ paginate = 5
         durhamippp = "rmoodie"
 
         copyright = [
-            "Design: [Strata](//themes.gohugo.io/strata/)",
-            "Pictures: [Yaz Ashmawi](//www.yazashmawi.com/)"
+            "Design: [Strata](//github.com/digitalcraftsman/hugo-strata-theme)",
+            "Pictures: [Yaz Ashmawi](//www.instagram.com/yazashmawi/)"
         ]
 
     [params.rss]
