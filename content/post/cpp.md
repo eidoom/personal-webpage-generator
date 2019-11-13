@@ -6,3 +6,5 @@ categories = ["computing"]
 description = ""
 draft=true
 +++
+
+`gdb` `run`
