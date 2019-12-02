@@ -8,7 +8,6 @@ description = "Using Nginx to serve a webpage with links to services on my home 
 
 I have [a few services running on my home server](../../tags/server), so I set up a simple web page with links to each service.
 To generate (static) content, I decided to use [pandoc](https://pandoc.org/) to generate html from a Markdown file.
-Since I didn't bother with any styling, it's ugly, but simple.
 I used [Nginx](https://nginx.org/) to serve the web page.
 
 ## Installing Nginx and pandoc
@@ -99,24 +98,21 @@ $ sudo systemctl restart nginx
 Write the content in Markdown
 
 ```
-vim ~/www/index.html
+cd ~/www
+vim index.html
 ```
 
-then generate the html
+I lazily styled it with the css from a pandoc example
 
 ```
-pandoc -o index.html index.md
+wget https://pandoc.org/demo/pandoc.css
 ```
-
-and access the dashboard at `http://ryanserver:24601/`.
-
-## Adding a shortcut for generation
 
 I wrote a short Makefile for the generation step
 
 ```
-echo "all:\n\tpandoc -o index.html index.md" > Makefile
+echo "all:\n\tpandoc index.md -f markdown -t html5 -s --highlight-style haddock -c pandoc.css -o index.html" > Makefile
 ```
 
-Use with `make`.
+Generate the html with `make` and access the dashboard at `http://ryanserver:24601/`.
 

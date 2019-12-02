@@ -11,7 +11,7 @@ description = "Using systemd to start custom service daemons on system start"
 There are sufficiently many services running on my home server now that starting them all manually after I restart the machine has become tedious, as infrequently as it occurs. 
 Systemd can be used to automate this.
 
-## Case study
+## Case study: beets web
 
 One such service is [`beets web`](../nerdifying-music-library-management-with-beets).
 To make it run on system start-up, simply create a `.service` file in `/etc/systemd/system/`
@@ -58,3 +58,30 @@ Once it's ready to use, activate running on startup with
 sudo systemctl enable beetsweb
 ```
 
+## Another example
+
+I manage my ebook library with Calibre. To autostart the Calibre content server (with web interface)
+
+```shell
+$ sudo vim calibre-server.service
+```
+
+```
+[Unit]
+Description=Calibre server daemon
+After=network.target
+
+[Service]
+User=ryan
+Group=ryan
+
+ExecStart=calibre-server --enable-local-write --listen-on=0.0.0.0 --port=9000 /home/ryan/gdrive-sync/library
+
+Type=simple
+TimeoutStopSec=20
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
