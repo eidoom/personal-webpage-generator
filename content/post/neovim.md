@@ -127,3 +127,11 @@ awk 'BEGIN{
 
 which shows a colour bar of smoothly changing colour in `truecolor` and discrete colour blocks elsewise.
 
+## Result
+
+Now `nvim` looks like
+
+<a href="../../images/nvim.png">
+<img alt="image of nvim" src="../../images/nvim.png" width="100%"/>
+</a>
+

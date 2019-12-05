@@ -164,3 +164,12 @@ $ tmux info | grep Tc
 ## Copying
 
 I use `Shift`+ `highlight with mouse cursor` then `Ctrl`+`Shift`+`c` to copy and `Ctrl`+`Shift`+`v` to paste in a `tmux` session.
+
+## Result
+
+Now `tmux` looks like
+
+<a href="../../images/tmux.png">
+<img alt="image of tmux" src="../../images/tmux.png" width="100%"/>
+</a>
+
