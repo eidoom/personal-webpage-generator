@@ -17,7 +17,7 @@ paginate = 5
     favicon = "favicon.ico"
 
     # Format dates with Go's time formatting
-    date_format = "02-01-2006"
+    date_format = "2 Jan 2006"
 
     # Add read time estimates in the format "X min read"
     show_read_time = true
@@ -118,7 +118,6 @@ paginate = 5
             email = "Email"
             message = "Message"
             submit = "Send message"
-
 
 #Menu links that appear on the left sidebar
 
