@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Generating static files"
+echo "# Generating static files"
 hugo
 echo -e "\n# Moving to public\n"
 cd public
