@@ -17,4 +17,4 @@ echo
 git commit -m "Update"
 git push
 echo
-git status
+git status --short
