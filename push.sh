@@ -15,4 +15,5 @@ git status --short
 echo -e "\n"
 git commit -m "Update"
 git push
+echo -e "\n"
 git status
