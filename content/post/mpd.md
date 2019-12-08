@@ -37,14 +37,14 @@ ympd -w 8090
 
 
 ```sh
-cd
 sudo apt update
-sudo apt install nginx php php-common php-json php-simplexml php-curl php-fpm php-mysql php-gd mariadb-server composer
-git clone git@github.com:ampache/ampache.git
-cd ampache
+sudo apt install apache2 php php-common php-json php-simplexml php-curl php-fpm php-mysql php-gd mariadb-server composer
+git clone -b master git@github.com:ampache/ampache.git ~/ampache
+cd ~/ampache
 composer install --prefer-source --no-interaction
-sudo chown ryan:www-data config
-chmod g+w config
+sudo mkdir /var/log/ampache
+sudo chown ryan:www-data ~/ampache/config
+chmod g+w ~/ampache/config
 ```
 
 <!--
@@ -88,6 +88,55 @@ upload_max_filesize = 20M
 ...
 ```
 -->
+
+## Apache
+
+```sh
+sudo vi /etc/apache2/ports.conf
+```
+
+```sh
+...
+Listen 8090
+...
+```
+
+```sh
+$ sudo vim /etc/apache2/sites-available/ampache.conf
+```
+
+```sh
+<VirtualHost *:8090>
+    ServerAdmin ryanmoodie@gmail.com
+    DocumentRoot /home/ryan/ampache
+    ServerName ryanserver
+    <Directory /home/ryan/ampache>
+           Allowoverride all
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/ampache-error.log
+    CustomLog ${APACHE_LOG_DIR}/ampache_access.log combined
+</VirtualHost>
+```
+
+```sh
+sudo a2dissite 000-default
+sudo a2ensite ampache
+sudo a2enmod rewrite
+cp ~/ampache/rest/.htaccess.dist ~/ampache/rest/.htaccess
+cp ~/ampache/play/.htaccess.dist ~/ampache/play/.htaccess
+cp ~/ampache/channel/.htaccess.dist ~/ampache/channel/.htaccess
+```
+Test
+
+```sh
+sudo apachectl configtest
+```
+
+```sh
+sudo systemctl start apache2
+```
+
+## Nginx
 
 [config](https://github.com/ampache/ampache/wiki/Installation#nginx)
 
@@ -228,8 +277,7 @@ server {
 
 ```sh
 sudo ln -s /etc/nginx/sites-available/ampache /etc/nginx/sites-enabled/
-sudo mkdir /var/log/ampache
 sudo systemctl restart nginx
 ```
 
-Web installer http://ryanserver:8090/
+## Web installer http://ryanserver:8090/
