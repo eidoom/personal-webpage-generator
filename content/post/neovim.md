@@ -14,10 +14,10 @@ I decided to replace it with [Neovim](https://github.com/neovim/neovim), or `nvi
 
 ## Installation
 
-I installed `nvim` and prerequisites for `vim-bootstrap`
+I installed `nvim` and prerequisites for packages and `vim-bootstrap`
 
 ```sh
-sudo dnf install ncurses-devel git ctags-etags curl neovim python3-neovim python3-pyflakes python3-jedi python3-flake8 vim-go
+sudo dnf install ncurses-devel git ctags-etags curl neovim python3-neovim python3-pyflakes python3-jedi python3-flake8 vim-go ripgrep
 sudo npm install -g neovim
 ```
 
