@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "# Updating public"
+cd public
+git pull
+cd ..
 echo "# Generating static files"
 hugo
 echo -e "\n# Moving to public\n"

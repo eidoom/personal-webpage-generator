@@ -10,7 +10,7 @@ draft = true
 ## [BPD](https://beets.readthedocs.io/en/stable/plugins/bpd.html)
 
 Open up the `beets` configuration with `beet config -e` and append `bpd` to `plugins:`.
-Start BPD with `beet bpd`
+Start BPD with `beet bpd`.
 
 <!--
 This was rubbish
@@ -30,32 +30,24 @@ ympd -w 8090
 ```
 -->
 
+<!--
+Couldn't get working
 ## [Ampache](https://github.com/ampache/ampache)
 
 [prerequisites](https://github.com/ampache/ampache/blob/develop/README.md#requirements)
-
-
 
 ```sh
 sudo apt update
 sudo apt install apache2 php php-common php-json php-simplexml php-curl php-fpm php-mysql php-gd mariadb-server composer
 git clone -b master git@github.com:ampache/ampache.git ~/ampache
+chown ryan:www-data ~/ampache
 cd ~/ampache
 composer install --prefer-source --no-interaction
 sudo mkdir /var/log/ampache
-sudo chown ryan:www-data ~/ampache/config
 chmod g+w ~/ampache/config
 ```
 
-<!--
-Alternative installation
-```sh
-wget https://github.com/ampache/ampache/releases/download/4.0.4/ampache-4.0.4_all.zip
-unarchive ~/ampache-4.0.4_all.zip
-rm -f ~/ampache-4.0.4_all.zip
-mv ~/ampache-4.0.4_all ~/ampache
-```
--->
+### MariaDB
 
 Configure database
 
@@ -76,20 +68,7 @@ MariaDB [(none)]> GRANT ALL ON *.* TO 'wusername'@'localhost' IDENTIFIED BY 'pas
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
 
-<!--
-This didn't work
-```sh
-sudo vi /etc/php/7.3/fpm/php.ini
-```
-
-```sh
-...
-upload_max_filesize = 20M
-...
-```
--->
-
-## Apache
+### Apache
 
 ```sh
 sudo vi /etc/apache2/ports.conf
@@ -126,6 +105,7 @@ cp ~/ampache/rest/.htaccess.dist ~/ampache/rest/.htaccess
 cp ~/ampache/play/.htaccess.dist ~/ampache/play/.htaccess
 cp ~/ampache/channel/.htaccess.dist ~/ampache/channel/.htaccess
 ```
+
 Test
 
 ```sh
@@ -136,7 +116,14 @@ sudo apachectl configtest
 sudo systemctl start apache2
 ```
 
-## Nginx
+Disable
+
+```sh
+sudo a2dissite ampache
+sudo systemctl reload apache2
+```
+
+### Nginx
 
 [config](https://github.com/ampache/ampache/wiki/Installation#nginx)
 
@@ -275,9 +262,40 @@ server {
 }
 ```
 
+Enable
+
 ```sh
 sudo ln -s /etc/nginx/sites-available/ampache /etc/nginx/sites-enabled/
 sudo systemctl restart nginx
 ```
 
-## Web installer http://ryanserver:8090/
+Disable
+
+```sh
+sudo rm /etc/nginx/sites-enabled/ampache
+sudo systemctl restart nginx
+```
+
+### Web installer http://ryanserver:8090/
+-->
+<!--
+Alternative installation
+```sh
+wget https://github.com/ampache/ampache/releases/download/4.0.4/ampache-4.0.4_all.zip
+unarchive ~/ampache-4.0.4_all.zip
+rm -f ~/ampache-4.0.4_all.zip
+mv ~/ampache-4.0.4_all ~/ampache
+```
+-->
+<!--
+This didn't work
+```sh
+sudo vi /etc/php/7.3/fpm/php.ini
+```
+
+```sh
+...
+upload_max_filesize = 20M
+...
+```
+-->

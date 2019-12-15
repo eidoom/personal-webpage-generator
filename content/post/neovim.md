@@ -138,3 +138,8 @@ Now `nvim` looks like
 <img alt="image of nvim" src="../../images/nvim.png" width="100%"/>
 </a>
 
+## Appendum
+##### <i class="fa fa-calendar"></i>&nbsp; 15 Dec 2019
+
+Having used this for a while, I've noticed that certain mistypes while using `vim-multiple-cursors` makes `neovim` freeze.
+My current solution is to only hit the right keys...
