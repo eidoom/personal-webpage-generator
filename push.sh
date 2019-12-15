@@ -4,7 +4,7 @@ echo "# Updating public"
 cd public
 git pull
 cd ..
-echo "\n# Generating static files"
+echo -e "\n# Generating static files"
 hugo
 echo -e "\n# Moving to public\n"
 cd public
