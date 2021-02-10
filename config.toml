@@ -63,6 +63,7 @@ paginate = 5
         inspire = "r.moodie"
         durhamphysics = "rrhf66"
         durhamippp = "rmoodie"
+        matrix= "eidoom:matrix.org"
 
         copyright = [
             "Design: [Strata](//github.com/digitalcraftsman/hugo-strata-theme)",
