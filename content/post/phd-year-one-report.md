@@ -2,7 +2,7 @@
 title = "PhD first year report"
 date = "2019-05-17"
 categories = ["physics"]
-tags = ["phd"]
+tags = ["phd","durham"]
 description = "An essay summarising the work of the first year of my PhD"
 draft = false
 +++

@@ -2,12 +2,13 @@
 title = "Laidlaw Scholarship Experiences"
 date = "2016-07-11"
 categories = ["physics"]
-tags = ["undergrad"]
+tags = ["undergrad","st andrews"]
 description = "A blog post for the Laidlaw Undergraduate Programme in Research and Leadership"
 draft = false
 +++
 
 This blog post was featured on [Laidlaw Scholarship Experiences](https://laidlawscholarships.wp.st-andrews.ac.uk/2016/07/11/bec/).
+It concerns [my project on photon BECs]({{< ref "bec-proj" >}}).
 
 # BEC
 

@@ -2,7 +2,7 @@
 title = "Modelling electron states in silicon-based quantum computers"
 date = "2015-09-07"
 categories = ["physics"]
-tags = ["undergrad"]
+tags = ["undergrad","st andrews"]
 description = "My first summer research project"
 draft = false
 +++
