@@ -1,5 +1,5 @@
 +++
-title = "PhD first year report"
+title = "PhD first year report: real QCD corrections"
 date = "2019-05-17"
 categories = ["physics"]
 tags = ["phd","durham"]
