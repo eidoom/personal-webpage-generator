@@ -1,8 +1,10 @@
+<div>
 <i class="fa fa-calendar"></i>&nbsp;&nbsp;
 <time datetime="{{ .Date }}">{{ .Date.Format .Site.Params.date_format }}</time>&nbsp;&nbsp;
 
 {{ if .Site.Params.Show_read_time }}
-<i class="fa fa-clock-o"></i>&nbsp;&nbsp; {{ .ReadingTime }} min read&nbsp;&nbsp;
+<i class="fa fa-clock-o"></i>&nbsp;&nbsp;
+{{ .ReadingTime }} min read&nbsp;&nbsp;
 {{ end }}
 
 {{ if isset .Params "categories" }}
@@ -25,4 +27,12 @@
        {{ if lt $k (sub $tagsLen 1) }}&middot;{{ end }}
        {{ end }}
    {{ end }}
+{{ end }}
+</div>
+
+{{ with .Params.description }}
+    <br>
+    <div>
+        <em>{{ . | markdownify }}</em>
+    </div>
 {{ end }}
