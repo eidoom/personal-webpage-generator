@@ -37,7 +37,8 @@ signature = "signature_invert.png"
 
 attribution = [
     "Design: [Strata](//github.com/digitalcraftsman/hugo-strata-theme)",
-    "Pictures: [Yaz Ashmawi](//www.instagram.com/yazashmawi/)"
+    "Pictures: [Yaz Ashmawi](//www.instagram.com/yazashmawi/)",
+    "Source: [GitHub](https://github.com/eidoom/personal-webpage-generator)"
 ]
 
 [params.sidebar.copyright]

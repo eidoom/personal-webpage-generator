@@ -164,7 +164,7 @@
 			{{ end }}
 			{{ if not .Site.Params.rss.hide }}
 			<li>
-				<a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" class="icon fa-rss" type="application/rss+xml">
+				<a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" class="icon fa-rss fa-lg" type="application/rss+xml">
 					<span class="label">RSS</span>
 				</a>
 			</li>
