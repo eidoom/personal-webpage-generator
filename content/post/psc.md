@@ -7,6 +7,8 @@ description = "I submitted this essay to complete the Professional Skills Curric
 draft = false
 +++
 
+[This essay is also available as a pdf](../../docs/psc.pdf)
+
 I decided to enroll for the Professional Skills Curriculum (PSC) following advice
 from friends who had previously completed the course. They recommended it
 as a useful and informative experience in self-reflection and personal development.
