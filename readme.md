@@ -6,7 +6,10 @@ The compiled site is [here](https://github.com/eidoom/eidoom.github.io) and the 
 
 ## Licence
 
+### Source
+
 personal-webpage-generator
+
 Copyright (C) 2017-21  Ryan Moodie
 
 This program is free software: you can redistribute it and/or modify
@@ -21,5 +24,7 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program at <./LICENSE.txt>.  If not, see <https://www.gnu.org/licenses/>.
+
+### Webpages
 
 The compiled site, with files available at <https://github.com/eidoom/eidoom.github.io> and served at <https://eidoom.github.io/>, is licenced under the [Creative Commons Attribution-ShareAlike 4.0 International Licence](https://creativecommons.org/licenses/by-sa/4.0/).
