@@ -2,7 +2,7 @@
 title = "Continuous symmetries in dual-mode Dicke models"
 date = "2018-03-02"
 categories = ["physics"]
-tags = ["undergrad","st andrews"]
+tags = ["undergrad","st andrews","condensed matter physics","quantum gases","cavity qed","superradiance","parameter space scan","python","exotic matter phases","theoretical physics","computational physics","simulation","modelling","non-equilibrium quantum systems","coupled light-matter systems","open quantum systems","cold atoms","optics","lasers","phase transitions","spontaneous symmetry breaking","gauge groups","ultracold atoms","symmetry breaking","microcavity","dipole approximation","attractors","limit cycles","time crystals","raman scattering","bragg planes","lindblad equation","mean-field theory","phase diagrams","cavities","mesoscale physics","mesoscopic"]
 description = "Simulating continuous symmetry breaking with cold atoms in optical cavities"
 draft = false
 +++
@@ -14,6 +14,6 @@ I wrote up the project in my [dissertation](https://bitbucket.org/ryanmoodie/two
 I also presented a [poster](https://bitbucket.org/ryanmoodie/two-mode-cavity-dicke-model-poster/raw/736c2497dcd3ad4c408790b48d65f8b4b9e9989e/poster.pdf) ([source](https://bitbucket.org/ryanmoodie/two-mode-cavity-dicke-model-poster)) and defended the work in my viva with a [presentation](https://bitbucket.org/ryanmoodie/two-mode-cavity-dicke-model-presentation/raw/e4aaaa264f7ce39ade845f11dcf77f686e9c723f/presentation_handout.pdf) ([source](https://bitbucket.org/ryanmoodie/two-mode-cavity-dicke-model-presentation)).
 
 During the following summer and on into my MASt at Cambridge, I continued work on the project.
-We [extended the model](https://bitbucket.org/ryanmoodie/two-mode-cavity-dicke-model-imaginary-g), leading to a [publication](https://doi.org/10.1103/PhysRevA.97.033802) ([arxiv](https://arxiv.org/abs/1711.03915)).
+We [extended the model](https://bitbucket.org/ryanmoodie/two-mode-cavity-dicke-model-imaginary-g), leading to a [publication](https://doi.org/10.1103/PhysRevA.97.033802) ([arXiv](https://arxiv.org/abs/1711.03915)).
 The rich behaviour of the system is evident in my [notes](https://bitbucket.org/ryanmoodie/two-mode-cavity-dicke-model-extension-notes/raw/3380569852f5db88d9c4c06013dfeb3155a2ed16/notes.pdf) ([source](https://bitbucket.org/ryanmoodie/two-mode-cavity-dicke-model-extension-notes)).
 I also gave [summary presentations of the work](https://gitlab.com/eidoom/mphys-8-min-presentation/-/raw/master/presentation_handout.pdf) ([source](https://gitlab.com/eidoom/mphys-8-min-presentation)) during my [PhD interviews]({{< ref "phd-applications" >}}).

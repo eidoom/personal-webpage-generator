@@ -2,7 +2,7 @@
 title = "CV update"
 date = "2020-12-09"
 categories = ["physics"]
-tags = ["phd","durham"]
+tags = ["phd","durham","particle physics"]
 description = "My CV for the time period during my PhD"
 draft = false
 +++

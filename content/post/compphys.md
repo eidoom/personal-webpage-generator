@@ -2,7 +2,7 @@
 title = "Simulation of a Brownian particle in an optical trap"
 date = "2016-05-13"
 categories = ["physics"]
-tags = ["undergrad","st andrews","mathematica","statistical mechanics"]
+tags = ["undergrad","st andrews","mathematica","statistical mechanics","computational physics","stochastic methods"]
 description = "My project for PH3080 Computational Physics"
 draft = false
 +++

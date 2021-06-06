@@ -2,8 +2,8 @@
 title = "Polarisation in photon Bose-Einstein condensation"
 date = "2016-10-17"
 categories = ["physics"]
-tags = ["undergrad","st andrews"]
-description = "Summer research project on a macroscopic quantum phenomenum"
+tags = ["undergrad","st andrews","condensed matter physics","quantum gases","cavity qed","python","bose-einstein condensation","mesoscale physics","exotic matter phases","analytical methods","numerical methods","semi-classical approximation","theoretical physics","computational physics","simulation","modelling","non-equilibrium quantum systems","coupled light-matter systems","open quantum systems","cold molecules","optics","lasers","microcavity","mesoscopic"]
+description = "Summer research project on a macroscopic quantum phenomenon"
 draft = false
 +++
 

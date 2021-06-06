@@ -2,7 +2,7 @@
 title = "A study of the tight-binding model"
 date = "2016-05-13"
 categories = ["physics"]
-tags = ["undergrad","st andrews"]
+tags = ["undergrad","st andrews","solid state physics","condensed matter physics"]
 description = "Simple modelling in solid state physics"
 draft = false
 +++

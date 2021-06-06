@@ -2,7 +2,7 @@
 title = "BUSSTEPP presentation: precision QCD with diphotons"
 date = "2019-08-17"
 categories = ["physics"]
-tags = ["phd","durham","glasgow"]
+tags = ["phd","durham","glasgow","particle physics"]
 description = "First year PhD summer school presentation"
 draft = false
 +++
