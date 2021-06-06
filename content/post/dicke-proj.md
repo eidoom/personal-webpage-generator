@@ -4,7 +4,7 @@ date = "2018-03-02"
 categories = ["physics"]
 tags = ["undergrad","st andrews"]
 description = "Simulating continuous symmetry breaking with cold atoms in optical cavities"
-draft = true
+draft = false
 +++
 
 My final-year undergraduate research project, supervised by Jonathan Keeling and Kyle Ballantine, involved modelling non-equilibrium quantum systems to explore the continuous symmetries they can exhibit.
