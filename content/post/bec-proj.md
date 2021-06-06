@@ -7,7 +7,7 @@ description = "Summer research project on a macroscopic quantum phenomenum"
 draft = false
 +++
 
-My second summer research project was with Dr Jonathan Keeling, modelling the polarisation behaviour of a Bose-Einstein condensate of photons.
+My second summer research project was with Jonathan Keeling and Peter Kirton, modelling the polarisation behaviour of a Bose-Einstein condensate of photons.
 I wrote a [Python code](https://bitbucket.org/ryanmoodie/photon-condensation) to simulate the system for this study.
 I [reported](https://bitbucket.org/ryanmoodie/photon-bec-polarisation-report/raw/32437a730c86f7d8f15ded162624049f52c8b2a4/report.pdf) ([source](https://bitbucket.org/ryanmoodie/photon-bec-polarisation-report)) on the work at the end of the summer.
 
