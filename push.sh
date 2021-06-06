@@ -11,12 +11,12 @@ cd public
 git add .
 git status --short
 echo
-git commit -m "Update"
+git commit -m "$1"
 git push
 echo -e "\n# Moving back up to root\n"
 cd ..
 git add -u
 git status --short
 echo
-git commit -m "Update"
+git commit -m "$1"
 git push

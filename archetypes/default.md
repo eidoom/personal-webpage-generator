@@ -1,7 +1,8 @@
 +++
 title = "{{ .TranslationBaseName | humanize}}"
 date = "{{ .Date }}"
-tags = [""]
 categories = [""]
+tags = [""]
 description = ""
+draft = true
 +++

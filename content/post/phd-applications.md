@@ -1,10 +1,9 @@
 +++
-banner = ""
-categories = ["physics"]
-date = "2017-12-04"
-menu = ""
-tags = ["phd"]
 title = "PhD applications"
+date = "2017-12-04"
+categories = ["physics"]
+tags = ["phd"]
+description = "My CV and statement of purpose"
 draft = false
 +++
 
