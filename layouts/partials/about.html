@@ -1,0 +1,6 @@
+<section>
+	<header class="major">
+		{{ with .Site.Params.name }}<h2>{{ . | markdownify }}</h2>{{ end }}
+	</header>
+	{{ with .Site.Params.description }}<p>{{ . | markdownify }}</p>{{ end }}
+</section>

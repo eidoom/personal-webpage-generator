@@ -6,19 +6,19 @@
 	<div class="row">
 		<br>
 		<p>
-		<ol class="recent-posts">
+		<ul class="recent-posts">
 			{{ range first 5 (where .Paginator.Pages "Section" "post") }}
 			<li>
 				<a href="{{ .Permalink }}">{{ .Title }}</a>
 			</li>
 			{{ end }}
-		</ol>
+		</ul>
 		</p>
 	</div>
 	<ul class="actions">
 		<li>
-			<a href="{{ .Site.BaseURL }}post" class=icon>
-				<input type="button" value="See more"/>
+			<a href="{{ .Site.BaseURL }}/post" class=icon>
+				<input type="button" value="See more" />
 			</a>
 		</li>
 	</ul>

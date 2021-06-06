@@ -15,5 +15,7 @@
 		{{ partial "contact" . }}
 	{{ end }}
 
-	{{ partial "more-links" . }}
+	{{ if not .Site.Params.links.hide }}
+		{{ partial "more-links" . }}
+	{{ end }}
 {{ end }}

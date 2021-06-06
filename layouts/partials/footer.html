@@ -3,42 +3,17 @@
     <a href="{{ .Site.BaseURL }}" class="signature">
         <img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.signature }}" alt="Ryan Moodie">
     </a>
-    <ul class="icons">
-        {{ with .Site.Params.sidebar.arxiv }}
-            <li>
-                <a href="//arxiv.org/a/{{ . }}.html" target="_blank" class="ai ai-arxiv ai-2x">
-                    <span class="label">arXiv</span>
-                </a>
-            </li>
-        {{ end }}
-        {{ with .Site.Params.sidebar.github }}
-            <li>
-                <a href="//github.com/{{ . }}" target="_blank" class="icon fa-github fa-lg">
-                    <span class="label">GitHub</span>
-                </a>
-            </li>
-        {{ end }}
-        {{ with .Site.Params.sidebar.gitlab }}
-            <li>
-                <a href="//gitlab.com/{{ . }}" target="_blank" class="icon fa-gitlab fa-lg">
-                    <span class="label">GitLab</span>
-                </a>
-            </li>
-        {{ end }}
-        {{ with .Site.Params.sidebar.bitbucket }}
-            <li>
-                <a href="//bitbucket.com/{{ . }}" target="_blank" class="icon fa-bitbucket fa-lg">
-                    <span class="label">BitBucket</span>
-                </a>
-            </li>
-        {{ end }}
-    </ul>
+
     <ul class="copyright">
-        {{ range .Site.Params.sidebar.copyright }}
+        {{ range .Site.Params.sidebar.attribution }}
         <li>{{ . | markdownify }}</li>
         {{ end }}
-	<li><a rel="license" class="icon"  href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></li>
+        {{ with .Site.Params.sidebar.copyright }}
+        <li>
+            Licence: <a rel="license" href="{{ .link }}">{{ .name | markdownify }}</a>
+        </li>
     </ul>
+    {{ end }}
 </footer>
 
 {{ "<!-- Scripts -->" | safeHTML }}
@@ -49,7 +24,7 @@
 <!--[if lte IE 8]><script src="{{ .Site.BaseURL }}js/ie/respond.min.js"></script><![endif]-->
 <script src="{{ .Site.BaseURL }}js/main.js"></script>
 
-{{ template "_internal/google_analytics_async.html" . }}
+<!-- {{ template "_internal/google_analytics_async.html" . }} -->
 
 {{ range .Site.Params.custom_js }}
 <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
