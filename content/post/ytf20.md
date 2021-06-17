@@ -2,7 +2,7 @@
 title = "YTF20 presentation: introduction to precision QCD"
 date = "2020-12-14"
 categories = ["physics"]
-tags = ["phd","durham","particle physics","precision qcd","quantum field theory","standard model","quantum chromodynamics","theoretical physics","computational physics","particle physics phenomenology","mathematical physics","high energy physics"]
+tags = ["phd","durham","particle physics","precision qcd","quantum field theory","standard model","quantum chromodynamics","theoretical physics","computational physics","particle physics phenomenology","mathematical physics","high energy physics","presentation","slides","conference"]
 description = "I gave a talk at the Early Career Theorists' Forum 2020"
 draft = false
 +++
