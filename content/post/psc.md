@@ -2,7 +2,7 @@
 title = "What I gained from the Professional Skills Curriculum"
 date = "2016-03-22"
 categories = ["professional development"]
-tags = ["undergrad","st andrews"]
+tags = ["undergrad","st andrews","report","essay","reflective"]
 description = "I submitted this essay to complete the Professional Skills Curriculum course"
 draft = false
 +++

@@ -2,7 +2,7 @@
 title = "Continuous symmetries in dual-mode Dicke models"
 date = "2018-03-02"
 categories = ["physics"]
-tags = ["undergrad","st andrews","condensed matter physics","quantum gases","cavity qed","superradiance","parameter space scan","python","exotic matter phases","theoretical physics","computational physics","simulation","modelling","non-equilibrium quantum systems","coupled light-matter systems","open quantum systems","cold atoms","optics","lasers","phase transitions","spontaneous symmetry breaking","gauge groups","ultracold atoms","symmetry breaking","microcavity","dipole approximation","attractors","limit cycles","time crystals","raman scattering","bragg planes","lindblad equation","mean-field theory","phase diagrams","cavities","mesoscale physics","mesoscopic"]
+tags = ["undergrad","st andrews","condensed matter physics","quantum gases","cavity qed","superradiance","parameter space scan","python","exotic matter phases","theoretical physics","computational physics","simulation","modelling","non-equilibrium quantum systems","coupled light-matter systems","open quantum systems","cold atoms","optics","lasers","phase transitions","spontaneous symmetry breaking","gauge groups","ultracold atoms","symmetry breaking","microcavity","dipole approximation","attractors","limit cycles","time crystals","raman scattering","bragg planes","lindblad equation","mean-field theory","phase diagrams","cavities","mesoscale physics","mesoscopic","code","programming","preprint","paper","arxiv","publication","phys. rev. a","report","presentation","slides","poster","disseration"]
 description = "Simulating continuous symmetry breaking with cold atoms in optical cavities"
 draft = false
 +++

@@ -2,7 +2,7 @@
 title = "Outreach with a Galton board"
 date = "2020-10-09"
 categories = ["physics","outreach"]
-tags = ["durham","phd","html","css","javascript","python","statistics","scientific method"]
+tags = ["durham","phd","html","css","javascript","python","statistics","scientific method","code"]
 description = "The quincunx may not be the most exciting but it is a great demonstration of some fundamental concepts in science"
 draft = false
 +++

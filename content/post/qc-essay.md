@@ -2,7 +2,7 @@
 title = "Quantum computers and the cluster state"
 date = "2015-02-28"
 categories = ["physics"]
-tags = ["undergrad","st andrews","quantum computation"]
+tags = ["undergrad","st andrews","quantum computers","literature review","article","presentation","slides"]
 description = "A literature review on quantum computers"
 draft = false
 +++
