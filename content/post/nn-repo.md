@@ -8,4 +8,4 @@ draft = false
 +++
 
 Our project [n3jet_diphoton](https://gitlab.com/JosephPB/n3jet_diphoton) demonstrates the use of neural networks for high precision scattering amplitudes within Monte Carlo event generator simulations for hadronic colliders.
-We finalised the code today along with a preprint submission.
+We finalised the code today along with a preprint submission that will be listed on the arXiv [tomorrow]({{< ref "nn-pp" >}}).
