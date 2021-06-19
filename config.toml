@@ -67,6 +67,15 @@ hide = true
 hide  = false
 title = "Recent posts"
 
+[params.preprints]
+hide = false
+title = "Recent preprints"
+max_entries = 5
+authors = ["Ryan Iain Moodie", ]
+show_authors = true
+show_categories = true
+show_date = true
+
 [params.contact]
 hide  = true
 # title = "Get in touch"

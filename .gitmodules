@@ -12,3 +12,6 @@
     path = public
     url = git@github.com:eidoom/eidoom.github.io.git
     branch = master
+[submodule "static/myrxiv"]
+	path = static/myrxiv
+	url = git@gitlab.com:eidoom/myrxiv.git

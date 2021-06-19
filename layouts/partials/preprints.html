@@ -1,0 +1,16 @@
+<section>
+	{{ with .Site.Params.preprints.title }}
+	<h2>{{ . }}</h2>
+	{{ end }}
+
+	<div id="arxiv">Loading...</div>
+	<script>
+		const maxEntries = {{ .Site.Params.preprints.max_entries }};
+		const authors = {{ .Site.Params.preprints.authors }};
+		const categories = [];
+		const showAuthors = {{ .Site.Params.preprints.show_authors }};
+		const showCategories = {{ .Site.Params.preprints.show_categories }};
+		const showDate = {{ .Site.Params.preprints.show_date }};
+	</script>
+	<script src="myrxiv/myrxiv.js"></script>
+</section>
