@@ -1,9 +1,10 @@
 +++
 title = "Advance HE Associate Fellowship application"
 date = "2021-07-03T15:45:47+01:00"
+edit = "2021-07-30"
 categories = ["professional development"]
 tags = ["teaching","phd","durham","reflective"]
-description = ""
+description = "My account of professional practice"
 draft = false
 +++
 
