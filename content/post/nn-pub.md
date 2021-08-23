@@ -1,11 +1,10 @@
 +++
-title = "Preprint: gluon fusion to diphoton plus jets with amplitude neural networks"
-date = "2021-06-18"
+title = "Publication: gluon fusion to diphoton plus jets with amplitude neural networks"
+date = "2021-08-16"
 categories = ["physics"]
 tags = ["particle physics","arxiv","preprint","phd","durham","neural networks","colliders","hadron colliders","high energy physics","scattering amplitudes","quantum electrodynamics","quantum chromodynamics","computational physics","particle physics phenomenology","standard model","quantum field theory","theoretical physics","precision qcd","amplitudes","cross sections","differential cross sections"]
-description = "New preprint"
+description = "New paper"
 draft = false
 +++
 
-Our new paper [Optimising simulations for diphoton production at hadron colliders using amplitude neural networks](https://arxiv.org/abs/2106.09474) was listed on the arXiv today.
-I posted about the code for this project [yesterday]({{< ref "nn-repo" >}}).
+Our paper [Optimising simulations for diphoton production at hadron colliders using amplitude neural networks](https://link.springer.com/article/10.1007/JHEP08%282021%29066) was published by the *Journal of High Energy Physics* today.
