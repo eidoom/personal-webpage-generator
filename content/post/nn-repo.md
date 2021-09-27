@@ -2,7 +2,7 @@
 title = "n3jet_diphoton version 1 release"
 date = "2021-06-17T15:47:41+01:00"
 categories = ["physics"]
-tags = ["software","particle physics","phd","durham","python","c++","neural networks","code"]
+tags = ["software","particle physics","phd","durham","python","c++","neural networks","code","release"]
 description = "Finalisation of the project"
 draft = false
 +++
