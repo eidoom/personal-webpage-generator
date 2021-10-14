@@ -2,8 +2,8 @@
 title = "PhD applications"
 date = "2017-12-04"
 categories = ["physics"]
-tags = ["phd","cambridge","particle physics"]
-description = "My CV and statement of purpose"
+tags = ["phd","cambridge","particle physics","cv","statement"]
+description = "My CV and statement of purpose for PhD applications"
 draft = false
 +++
 
