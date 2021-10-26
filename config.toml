@@ -7,6 +7,9 @@ theme = "hugo-strata-theme"
 # Define how many posts should appear on a site
 paginate = 5
 
+# [markup.goldmark.renderer]
+#   unsafe = true
+
 [params]
 # To provide some metadata for search engines feel free to add a few
 # information about you and your website.
