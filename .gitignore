@@ -1,3 +1,4 @@
 *.swp
 resources/
 .idea/
+.hugo_build.lock
