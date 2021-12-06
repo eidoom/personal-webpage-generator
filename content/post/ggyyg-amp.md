@@ -2,7 +2,7 @@
 title = "Publication: gluon fusion to diphoton plus jet amplitude at two loops"
 date = "2021-11-11"
 categories = ["physics"]
-tags = ["phd","durham","particle physics","publication","high energy physics","scattering amplitudes","amplitudes","quantum chromodynamics","computational physics","particle physics phenomenology","standard model","quantum field theory","theoretical physics","precision qcd","jhep","phenomenology","precision","qcd","nlo","two-loop","paper","five-point","two-to-three","open access","open source"]
+tags = ["phd","durham","particle physics","publication","high energy physics","scattering amplitudes","amplitudes","quantum chromodynamics","computational physics","particle physics phenomenology","standard model","quantum field theory","theoretical physics","precision qcd","jhep","phenomenology","precision","qcd","nlo","two-loop","paper","five-point","two-to-three","open access","open source","journal of high energy physics"]
 description = "New publication"
 draft = false
 +++
