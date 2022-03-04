@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-echo -e "This doesn't work this without a commit message!\n"
+if [ -z "$1" ]; then
+	echo "Missing commit message!"
+	exit 0
+fi
 
 echo "# Updating public"
 cd public
