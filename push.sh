@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "This doesn't work this without a commit message!"
+
 echo "# Updating public"
 cd public
 git pull
