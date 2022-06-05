@@ -14,7 +14,7 @@ paginate = 5
 # To provide some metadata for search engines feel free to add a few
 # information about you and your website.
 name = "Ryan Moodie"
-description = "Physicist"
+description = "~~Physics student~~ **ARCHIVED** I am no longer a student (in the formal sense, at least) so this student blog is complete!"
 
 # path relative to static folder
 favicon = "favicon.ico"
