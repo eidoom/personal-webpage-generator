@@ -2,7 +2,7 @@
 title = "Laidlaw Scholarship Experiences"
 date = "2016-07-11"
 categories = ["physics","professional development"]
-tags = ["undergrad","st andrews","summer project"]
+tags = ["undergrad","st andrews","summer project","laidlaw"]
 description = "A blog post for the Laidlaw Undergraduate Programme in Research and Leadership"
 draft = false
 +++
