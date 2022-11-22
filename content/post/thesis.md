@@ -1,5 +1,5 @@
 +++
-title = "PhD thesis"
+title = "Writing my PhD thesis"
 date = "2022-03-04T12:55:06Z"
 categories = ["physics"]
 tags = ["phd","ippp","durham","uk","thesis"]

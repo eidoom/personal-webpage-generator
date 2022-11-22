@@ -7,7 +7,7 @@ description = "Talk at 20th International Workshop on Advanced Computing and Ana
 draft = false
 +++
 
-I gave a virtual [talk](https://indico.cern.ch/event/855454/contributions/4606382/) at [ACAT2021](https://indico.cern.ch/event/855454/) (while I had COVID, actually) about our recent [paper]({{< ref "nn-pub" >}}).
+I gave a virtual [talk](https://indico.cern.ch/event/855454/contributions/4606382/) at [ACAT 2021](https://indico.cern.ch/event/855454/) (while I had COVID, actually) about our recent [paper]({{< ref "nn-pub" >}}).
 Here are the [slides](https://eidoom.gitlab.io/acat2021/) ([source](https://gitlab.com/eidoom/acat2021)) and a recording (below).
 Apologies for where the audio cuts out in the middle, but it's really Zoom's fault for not supporting Linux well.
 
