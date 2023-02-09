@@ -134,10 +134,10 @@ wikipedia = "eidoom"
 projecteuler = "eidoom"
 #physicsforums = "ryan-moodie.645989"
 inspire = "1869766"
-durhamphysics = "17600"
+# durhamphysics = "17600"
 durhamippp = "rmoodie"
-matrix= "eidoom:matrix.org"
-email = "ryan.i.moodie@durham.ac.uk"
+matrix= "ryan:eidoom.duckdns.org"
+email = "ryaniain.moodie@unito.it"
 
 # [menu]
 #Menu links that appear on the left sidebar
